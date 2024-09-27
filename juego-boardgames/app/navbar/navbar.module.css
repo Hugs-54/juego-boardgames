@@ -1,8 +1,18 @@
 .navItem{
     color: #58937E;
-    /*font-size: 45px;*/
 }
-
 .navItem:hover{
     color: #73bea4;
 }
+
+.navItemMobile{
+    color: #FFFFFF;
+}
+.navItemMobile:hover{
+    color: #dffaf0;
+}
+
+.greenBackground{
+    background-color: #58937E;
+}
+

@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      textUnderlineOffset: {
+        20:'20px',
+        10:'10px',
+      },
     },
   },
   plugins: [],
