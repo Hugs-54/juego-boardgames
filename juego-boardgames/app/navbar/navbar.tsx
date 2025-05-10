@@ -3,15 +3,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Bree_Serif } from "next/font/google";
 import classes from "./navbar.module.css";
 import {
   Bars3Icon,
   ChevronRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-
-const bree_Serif = Bree_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="px-10 py-8">
-      <div className={`${bree_Serif.className} flex items-center`}>
+      <div className={"font-bree flex items-center"}>
         <Link className="pr-5" href="/">
           <Image
             className="w-2/3 md:w-20 xl:w-full"
@@ -33,7 +30,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className={`hidden md:flex md:text-xl xl:text-5xl items-center`}>
+        <div className={`hidden md:flex md:text-xl xl:text-4xl items-center`}>
           <Link className={`${classes.navItem} px-5`} href="/">
             ACCUEIL
           </Link>
@@ -45,7 +42,7 @@ export default function Navbar() {
               JEUX
             </p>
             <div className="absolute hidden group-hover:flex flex-col w-max z-10 md:pt-2 xl:pt-8 md:space-y-1 xl:space-y-4">
-              <Link className={`${classes.navItem}`} href="/discover-us">
+              <Link className={`${classes.navItem}`} href="/jurassic-islas">
                 JURASSIC ISLAS
               </Link>
               <Link className={`${classes.navItem}`} href="/discover-us">
@@ -104,7 +101,7 @@ export default function Navbar() {
               </p>
               <Link
                 className={`mb-4 ml-4 ${classes.navItemMobile} text-base sm:text-2xl`}
-                href="/discover-us"
+                href="/jurassic-islas"
                 onClick={toggleMenu}
               >
                 Jurassic Islas

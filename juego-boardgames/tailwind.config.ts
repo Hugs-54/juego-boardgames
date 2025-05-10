@@ -17,6 +17,12 @@ const config: Config = {
         20:'20px',
         10:'10px',
       },
+      fontFamily: {
+        bree: ['var(--font-bree)', 'serif'],
+      },
+      translate: {
+        'custom-y-303': '303px',
+      },
     },
   },
   plugins: [],

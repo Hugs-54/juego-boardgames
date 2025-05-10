@@ -1,5 +1,10 @@
 import React from "react";
+import TitlePage from "./title-page";
 
 export default function Boardgame() {
-  return <div>Page d&apos;un jeu</div>;
+  return (
+    <>
+      <TitlePage></TitlePage>
+    </>
+  );
 }
