@@ -31,7 +31,7 @@ export default function TitlePage() {
             L’extravagant et riche PDG Julian Hugont, vous fait lègue d’un
             archipel d’îles au large du Costa Rica. Il compte sur vous pour
             construire, malgré toutes les difficultés, un parc de dinosaures.
-            Dépêchez-vous de construire les plus beaux bâtiments et d'introduire
+            Dépêchez-vous de construire les plus beaux bâtiments et d’introduire
             les plus féroces des dinosaures afin d’accueillir le plus de
             visiteurs. Attention, les autres héritiers ne vous laisseront pas
             faire…
