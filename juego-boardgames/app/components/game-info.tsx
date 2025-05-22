@@ -34,7 +34,7 @@ export default function GameInfo() {
               alt="Logo duree"
             />
             <p className="font-bold pt-4 text-2xl sm:text-5xl md:text-7xl xl:text-8xl">
-              30'
+              30&apos;
             </p>
           </div>
 
