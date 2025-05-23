@@ -23,8 +23,17 @@ const config: Config = {
       translate: {
         'custom-y-303': '303px',
       },
+      boxShadow:{
+        'item':'7px 7px 4px 0px rgba(0,0,0,0.25)',
+        'bloc':'0px 6px 4px 0px rgba(0,0,0,0.25), 0px -6px 4px 0px rgba(0,0,0,0.25)',
+        'bloc-down':'0px 6px 4px 0px rgba(0,0,0,0.25)',
+        'item-phone':'3px 3px 4px 0px rgba(0,0,0,0.25)',
+        'bloc-phone':'0px 3px 4px 0px rgba(0,0,0,0.25), 0px -3px 4px 0px rgba(0,0,0,0.25)',
+        'bloc-down-phone':'0px 3px 4px 0px rgba(0,0,0,0.25)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };
 export default config;

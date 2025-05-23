@@ -16,7 +16,7 @@ export default function TitlePage() {
             ISLAS
           </p>
         </div>
-        <div className="row-span-3 col-start-2 row-start-1 flex justify-center px-2 sm:px-4 md:px-8 xl:px-12">
+        <div className="row-span-3 col-start-2 row-start-1 flex justify-center px-2 sm:px-4 md:px-8 xl:px-12 ">
           <Image
             className="w-full"
             src="/Jurassic_Islas_Logo.png"
