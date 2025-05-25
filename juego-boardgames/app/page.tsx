@@ -38,9 +38,9 @@ export default function Home() {
               <>
                 <h1 className="text-5xl text-[#305B68] pb-4">Jurassic Islas</h1>
                 <p>
-                  L’extravagant et riche PDG Julian Hugont, vous fait lègue d’un
-                  archipel d’îles au large du Costa Rica. Il compte sur vous
-                  pour construire, malgré toutes les...
+                  L&apos;extravagant et riche PDG Julian Hugont, vous fait lègue
+                  d&apos;un archipel d&apos;îles au large du Costa Rica. Il
+                  compte sur vous pour construire, malgré toutes les...
                 </p>
               </>
             }
