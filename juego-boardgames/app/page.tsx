@@ -19,8 +19,8 @@ export default function Home() {
               <>
                 <h1 className="text-5xl text-[#305B68] pb-4">Nous découvrir</h1>
                 <p>
-                  Ju&Go est l'association de deux frères, Hugo et Julien, dont
-                  le but est de créer et de développer des jeux de...
+                  Ju&Go est l&apos;association de deux frères, Hugo et Julien,
+                  dont le but est de créer et de développer des jeux de...
                 </p>
               </>
             }
