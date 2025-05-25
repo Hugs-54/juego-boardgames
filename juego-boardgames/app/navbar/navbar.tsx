@@ -119,14 +119,14 @@ export default function Navbar() {
               </Link>
               <Link
                 className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
-                href="/discover-us"
+                href="/ultime-victime"
                 onClick={toggleMenu}
               >
                 Ultime Victime
               </Link>
               <Link
                 className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
-                href="/discover-us"
+                href="/monster-snacks"
                 onClick={toggleMenu}
               >
                 Monster Snacks
