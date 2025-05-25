@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-export default function GameInfo() {
+export default function GameInfo(props: {
+  nbPlayer: string;
+  age: string;
+  time: string;
+}) {
   return (
     <>
       <div className="relative w-full pb-12 sm:pb-20 md:pb-28 xl:pb-32">
@@ -17,7 +21,7 @@ export default function GameInfo() {
               alt="Logo nombre de joueur"
             />
             <p className="font-bold pt-4 text-2xl sm:text-5xl md:text-7xl xl:text-8xl">
-              2-6
+              {props.nbPlayer}
             </p>
           </div>
 
@@ -30,7 +34,7 @@ export default function GameInfo() {
               alt="Logo duree"
             />
             <p className="font-bold pt-4 text-2xl sm:text-5xl md:text-7xl xl:text-8xl">
-              30&apos;
+              {props.time}
             </p>
           </div>
 
@@ -43,7 +47,7 @@ export default function GameInfo() {
               alt="Logo tranche d'age"
             />
             <p className="font-bold pt-4 text-2xl sm:text-5xl md:text-7xl xl:text-8xl">
-              7+
+              {props.age}
             </p>
           </div>
         </div>

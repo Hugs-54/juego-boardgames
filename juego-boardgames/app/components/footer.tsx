@@ -8,6 +8,12 @@ export default function Footer() {
         <a href="/jurassic-islas" className="hover:underline">
           Jurassic Islas
         </a>
+        <a href="/ultime-victime" className="hover:underline">
+          Ultime Victime
+        </a>
+        <a href="/monster-snacks" className="hover:underline">
+          Monster Snacks
+        </a>
         <a href="/contact" className="hover:underline">
           Contact
         </a>

@@ -21,7 +21,7 @@ export default function JurassicIslas() {
             visiteurs. Attention, les autres héritiers ne vous laisseront pas
             faire…"
       ></TitlePage>
-      <GameInfo></GameInfo>
+      <GameInfo time="30'" age="7+" nbPlayer="2-6"></GameInfo>
       <TextImageBloc
         title="Construisez"
         text="Obtenez une île, choisissez bien car certaines pourraient se révéler dangereuses ! 

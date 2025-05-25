@@ -48,13 +48,13 @@ export default function Navbar() {
               </Link>
               <Link
                 className="text-[#58937E] hover:text-[#73bea4]"
-                href="/discover-us"
+                href="/ultime-victime"
               >
                 ULTIME VICTIME
               </Link>
               <Link
                 className="text-[#58937E] hover:text-[#73bea4]"
-                href="/discover-us"
+                href="/monster-snacks"
               >
                 MONSTER SNACKS
               </Link>

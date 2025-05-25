@@ -4,8 +4,9 @@ import Image from "next/image";
 export default function TextImageBloc(props: {
   title?: string;
   image?: { source: string; isLeft: boolean };
-  text: string;
+  text: React.ReactNode;
   isWhite?: boolean;
+  hideShadowBloc?: boolean;
 }) {
   const primaryColor = props.isWhite ? "#FFFFFF" : "#58937E";
   const secondaryColor = props.isWhite ? "#58937E" : "#FFFFFF";
@@ -15,7 +16,9 @@ export default function TextImageBloc(props: {
       {/*Bloc principal*/}
       <div
         className={`min-h-fit flex flex-col items-center justify-center font-bree mb-2 ${
-          props.isWhite ? "" : "shadow-bloc-phone sm:shadow-bloc"
+          props.isWhite || props.hideShadowBloc
+            ? ""
+            : "shadow-bloc-phone sm:shadow-bloc"
         }`}
         style={{ backgroundColor: primaryColor }}
       >
