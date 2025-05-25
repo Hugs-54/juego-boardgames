@@ -3,6 +3,9 @@ import TitlePage from "../components/title-page";
 import GameInfo from "../components/game-info";
 import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
+import BubbleCloud from "../components/bubble-cloud";
+import Timeline from "../components/timeline";
+import VideoBloc from "../components/video-bloc";
 
 export default function JurassicIslas() {
   return (
@@ -31,6 +34,11 @@ export default function JurassicIslas() {
           isLeft: false,
         }}
       ></TextImageBloc>
+      <VideoBloc
+        title="Présentation vidéo"
+        ytbLink="https://www.youtube.com/embed/GqiO7WTwzFE"
+        isWhite
+      ></VideoBloc>
       <TextImageBloc
         title="Statut"
         text="Après deux ans de développement, plusieurs versions du jeu et des
@@ -39,7 +47,6 @@ export default function JurassicIslas() {
               amusante. Actuellement, le jeu est envoyé vers les maisons
               d'éditions susceptibles d'être intéressées. Avec comme souhait,
               que Jurassic Islas soit édité et commercialisé."
-        isWhite
       ></TextImageBloc>
       <Footer></Footer>
     </>
