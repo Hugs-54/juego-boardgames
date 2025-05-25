@@ -31,33 +31,46 @@ export default function Navbar() {
         </Link>
 
         <div className={`hidden md:flex md:text-xl xl:text-4xl items-center`}>
-          <Link className={`${classes.navItem} px-5`} href="/">
+          <Link className="text-[#58937E] hover:text-[#73bea4] px-5" href="/">
             ACCUEIL
           </Link>
 
-          <div className="group px-5">
-            <p
-              className={`${classes.navItem} cursor-default group-hover:underline md:underline-offset-10 xl:underline-offset-20`}
-            >
+          <div className="group px-5 ">
+            <p className="text-[#58937E] hover:text-[#73bea4] cursor-default group-hover:underline md:underline-offset-10 xl:underline-offset-20">
               JEUX
             </p>
             <div className="absolute hidden group-hover:flex flex-col w-max z-10 md:pt-2 xl:pt-8 md:space-y-1 xl:space-y-4">
-              <Link className={`${classes.navItem}`} href="/jurassic-islas">
+              <Link
+                className="text-[#58937E] hover:text-[#73bea4]"
+                href="/jurassic-islas"
+              >
                 JURASSIC ISLAS
               </Link>
-              <Link className={`${classes.navItem}`} href="/discover-us">
+              <Link
+                className="text-[#58937E] hover:text-[#73bea4]"
+                href="/discover-us"
+              >
                 ULTIME VICTIME
               </Link>
-              <Link className={`${classes.navItem}`} href="/discover-us">
+              <Link
+                className="text-[#58937E] hover:text-[#73bea4]"
+                href="/discover-us"
+              >
                 MONSTER SNACKS
               </Link>
             </div>
           </div>
 
-          <Link className={`${classes.navItem} px-5 `} href="/discover-us">
+          <Link
+            className="text-[#58937E] hover:text-[#73bea4] px-5"
+            href="/discover-us"
+          >
             NOUS DECOUVRIR
           </Link>
-          <Link className={`${classes.navItem} px-5 `} href="/contact">
+          <Link
+            className="text-[#58937E] hover:text-[#73bea4] px-5"
+            href="/contact"
+          >
             CONTACT
           </Link>
         </div>
@@ -68,7 +81,7 @@ export default function Navbar() {
           } block md:hidden absolute end-4`}
           onClick={toggleMenu}
         >
-          <Bars3Icon className={`size-10 ${classes.navItem}`} />
+          <Bars3Icon className="size-10 text-[#58937E] hover:text-[#73bea4]" />
         </button>
 
         <div
@@ -80,13 +93,11 @@ export default function Navbar() {
         >
           <div className="flex flex-col h-full p-6">
             <button className="start mb-5 mt-6" onClick={toggleMenu}>
-              <ChevronRightIcon
-                className={`size-10 ${classes.navItemMobile}`}
-              />
+              <ChevronRightIcon className="size-10 text-white hover:text-[#dffaf0]" />
             </button>
 
             <Link
-              className={`mb-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+              className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
               href="/"
               onClick={toggleMenu}
             >
@@ -100,21 +111,21 @@ export default function Navbar() {
                 Jeux
               </p>
               <Link
-                className={`mb-4 ml-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
                 href="/jurassic-islas"
                 onClick={toggleMenu}
               >
                 Jurassic Islas
               </Link>
               <Link
-                className={`mb-4 ml-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
                 href="/discover-us"
                 onClick={toggleMenu}
               >
                 Ultime Victime
               </Link>
               <Link
-                className={`mb-4 ml-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
                 href="/discover-us"
                 onClick={toggleMenu}
               >
@@ -123,14 +134,14 @@ export default function Navbar() {
             </div>
 
             <Link
-              className={`mb-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+              className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
               href="/discover-us"
               onClick={toggleMenu}
             >
               Nous découvrir
             </Link>
             <Link
-              className={`mb-4 ${classes.navItemMobile} text-base sm:text-2xl`}
+              className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
               href="/contact"
               onClick={toggleMenu}
             >

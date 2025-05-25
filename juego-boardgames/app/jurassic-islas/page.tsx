@@ -3,14 +3,24 @@ import TitlePage from "../components/title-page";
 import GameInfo from "../components/game-info";
 import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
-import BubbleCloud from "../components/bubble-cloud";
-import Timeline from "../components/timeline";
 import VideoBloc from "../components/video-bloc";
+import ContactForm from "../components/contact-form";
 
 export default function JurassicIslas() {
   return (
     <>
-      <TitlePage></TitlePage>
+      <TitlePage
+        title1="JURASSIC"
+        title2="ISLAS"
+        imgSrc="/Jurassic_Islas_Logo.png"
+        text="L’extravagant et riche PDG Julian Hugont, vous fait lègue d’un
+            archipel d’îles au large du Costa Rica. Il compte sur vous pour
+            construire, malgré toutes les difficultés, un parc de dinosaures.
+            Dépêchez-vous de construire les plus beaux bâtiments et d’introduire
+            les plus féroces des dinosaures afin d’accueillir le plus de
+            visiteurs. Attention, les autres héritiers ne vous laisseront pas
+            faire…"
+      ></TitlePage>
       <GameInfo></GameInfo>
       <TextImageBloc
         title="Construisez"
@@ -47,7 +57,9 @@ export default function JurassicIslas() {
               amusante. Actuellement, le jeu est envoyé vers les maisons
               d'éditions susceptibles d'être intéressées. Avec comme souhait,
               que Jurassic Islas soit édité et commercialisé."
+        isWhite
       ></TextImageBloc>
+      <ContactForm withTitle withTopShadow></ContactForm>
       <Footer></Footer>
     </>
   );
