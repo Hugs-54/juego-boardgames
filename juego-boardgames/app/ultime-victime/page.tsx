@@ -26,15 +26,16 @@ export default function UltimeVictime() {
         title="T'as pas la ref ?"
         text={
           <>
-            Ultime Victime s'adresse autant aux amateurs du genre qu'aux plus
-            peureux ! Pas besoin d'avoir vu les films pour y jouer. D'ailleurs,
-            vous avez besoin de comprendre le lien entre une carte et son film ?
-            Vous ne connaissez pas le film cité ? Pas de panique !
+            Ultime Victime s&apos;adresse autant aux amateurs du genre
+            qu&apos;aux plus peureux ! Pas besoin d&apos;avoir vu les films pour
+            y jouer. D&apos;ailleurs, vous avez besoin de comprendre le lien
+            entre une carte et son film ? Vous ne connaissez pas le film cité ?
+            Pas de panique !
             <br />
-            Scannez le QR-code de la carte « T'as pas la ref ? » pour découvrir
-            les bandes annonces ou extraits faisant référence aux effets que
-            vous ferez subir aux autres joueurs. <br />
-            T'as pas le ref est disponible{" "}
+            Scannez le QR-code de la carte « T&apos;as pas la ref ? » pour
+            découvrir les bandes annonces ou extraits faisant référence aux
+            effets que vous ferez subir aux autres joueurs. <br />
+            T&apos;as pas le ref est disponible{" "}
             <a
               href="https://qrco.de/ultimevictime"
               target="_blank"
@@ -44,7 +45,8 @@ export default function UltimeVictime() {
             </a>{" "}
             <br />
             Ultime Victime propose également des cartes supplémentaires pour
-            ceux qui aiment et connaissent l'univers du cinéma d'horreur."
+            ceux qui aiment et connaissent l&apos;univers du cinéma
+            d&apos;horreur."
           </>
         }
         isWhite
@@ -54,9 +56,9 @@ export default function UltimeVictime() {
         title="Informations"
         text={
           <>
-            Contenu : 71 cartes de jeu, 3 cartes Ultime Victime, 1 carte “T'as
-            pas la ref ?”, une règle du jeu, 1 plateau de jeu, 8 pions, et 1
-            cimetière. <br />
+            Contenu : 71 cartes de jeu, 3 cartes Ultime Victime, 1 carte
+            “T&apos;as pas la ref ?”, une règle du jeu, 1 plateau de jeu, 8
+            pions, et 1 cimetière. <br />
             Accessoires effrayants et musique inquiétante sont recommandés.
           </>
         }
