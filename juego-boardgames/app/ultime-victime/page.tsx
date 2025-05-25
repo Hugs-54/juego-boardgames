@@ -46,7 +46,7 @@ export default function UltimeVictime() {
             <br />
             Ultime Victime propose également des cartes supplémentaires pour
             ceux qui aiment et connaissent l&apos;univers du cinéma
-            d&apos;horreur."
+            d&apos;horreur.
           </>
         }
         isWhite
