@@ -5,14 +5,15 @@ import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import VideoBloc from "../components/video-bloc";
 import ContactForm from "../components/contact-form";
+import gameList from "../games-list";
 
 export default function JurassicIslas() {
   return (
     <>
       <TitlePage
-        title1="JURASSIC"
-        title2="ISLAS"
-        imgSrc="/Jurassic_Islas_Logo.png"
+        title1={gameList.jurassicIslas.name.split(" ")[0].toUpperCase()}
+        title2={gameList.jurassicIslas.name.split(" ")[1].toUpperCase()}
+        imgSrc={gameList.jurassicIslas.image}
         text="L’extravagant et riche PDG Julian Hugont, vous fait lègue d’un
             archipel d’îles au large du Costa Rica. Il compte sur vous pour
             construire, malgré toutes les difficultés, un parc de dinosaures.

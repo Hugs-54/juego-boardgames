@@ -5,7 +5,7 @@ export default function TitlePage(props: {
   title1: string;
   title2?: string;
   imgSrc: string;
-  text: React.ReactNode;
+  text?: React.ReactNode;
 }) {
   return (
     <>
@@ -31,7 +31,13 @@ export default function TitlePage(props: {
           />
         </div>
 
-        <div className="col-start-1 col-span-2 row-start-4 pt-8 sm:pt-12 md:pt-20 xl:pt-28 pb-12 sm:pb-8 md:pb-16 xl:pb-32 ">
+        <div
+          className={`${
+            props.text
+              ? "pt-8 sm:pt-12 md:pt-20 xl:pt-28 pb-12 sm:pb-8 md:pb-16 xl:pb-32"
+              : "py-1 sm:py-5"
+          } col-start-1 col-span-2 row-start-4 `}
+        >
           <p className="text-md sm:text-lg md:text-3xl xl:text-5xl text-white px-4 sm:px-10 md:px-18 xl:px-28 xl:leading-normal text-justify">
             {props.text}
           </p>

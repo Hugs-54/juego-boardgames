@@ -64,13 +64,16 @@ export default function TextImageBloc(props: {
                   : ""
               } row-start-3 row-end-5 col-start-1 z-0 items-center justify-center flex`}
             >
-              <Image
-                className="h-full w-fit sm:h-fit sm:w-full md:w-full xl:w-5/6"
-                src={props.image.source}
-                width={2000}
-                height={2000}
-                alt=""
-              />
+              <div className="flex items-center justify-center h-full w-full">
+                <Image
+                  src={props.image.source}
+                  alt={props.image.source}
+                  width={0}
+                  height={0}
+                  className="h-full w-auto object-contain"
+                  sizes="100vw"
+                />
+              </div>
             </div>
           )}
 

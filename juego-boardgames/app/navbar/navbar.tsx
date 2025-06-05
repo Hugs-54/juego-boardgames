@@ -9,6 +9,7 @@ import {
   ChevronRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import gameList from "../games-list";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,24 +41,15 @@ export default function Navbar() {
               JEUX
             </p>
             <div className="absolute hidden group-hover:flex flex-col w-max z-10 md:pt-2 xl:pt-8 md:space-y-1 xl:space-y-4">
-              <Link
-                className="text-[#58937E] hover:text-[#73bea4]"
-                href="/jurassic-islas"
-              >
-                JURASSIC ISLAS
-              </Link>
-              <Link
-                className="text-[#58937E] hover:text-[#73bea4]"
-                href="/ultime-victime"
-              >
-                ULTIME VICTIME
-              </Link>
-              <Link
-                className="text-[#58937E] hover:text-[#73bea4]"
-                href="/monster-snacks"
-              >
-                MONSTER SNACKS
-              </Link>
+              {Object.values(gameList).map((game) => (
+                <Link
+                  key={game.name}
+                  className="text-[#58937E] hover:text-[#73bea4]"
+                  href={game.path}
+                >
+                  {game.name.toUpperCase()}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -110,27 +102,16 @@ export default function Navbar() {
               >
                 Jeux
               </p>
-              <Link
-                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
-                href="/jurassic-islas"
-                onClick={toggleMenu}
-              >
-                Jurassic Islas
-              </Link>
-              <Link
-                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
-                href="/ultime-victime"
-                onClick={toggleMenu}
-              >
-                Ultime Victime
-              </Link>
-              <Link
-                className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
-                href="/monster-snacks"
-                onClick={toggleMenu}
-              >
-                Monster Snacks
-              </Link>
+              {Object.values(gameList).map((game) => (
+                <Link
+                  key={game.name}
+                  className={`mb-4 ml-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
+                  onClick={toggleMenu}
+                  href={game.path}
+                >
+                  {game.name}
+                </Link>
+              ))}
             </div>
 
             <Link

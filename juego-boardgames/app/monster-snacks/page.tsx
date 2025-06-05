@@ -4,14 +4,15 @@ import GameInfo from "../components/game-info";
 import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import ContactForm from "../components/contact-form";
+import gameList from "../games-list";
 
 export default function MonsterSnacks() {
   return (
     <>
       <TitlePage
-        title1="MONSTER"
-        title2="SNACKS"
-        imgSrc="/image_monster_snack.png"
+        title1={gameList.monsterSnacks.name.split(" ")[0].toUpperCase()}
+        title2={gameList.monsterSnacks.name.split(" ")[1].toUpperCase()}
+        imgSrc={gameList.monsterSnacks.image}
         text="Incarner un monstre à l'appétit immense, pour vous rassassier récoltez les snacks les plus savoureux du distributeur. Attention, vous devrez faire preuve d'observation et de stratégie pour les récupérer."
       ></TitlePage>
       <GameInfo time="20'" age="10+" nbPlayer="2-4"></GameInfo>

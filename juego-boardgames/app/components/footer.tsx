@@ -1,3 +1,5 @@
+import gameList from "../games-list";
+
 export default function Footer() {
   return (
     <footer className="bg-[#58937E] text-white font-bree py-4 flex flex-col items-center space-y-2 text-sm sm:text-base shadow-bloc-top-phone sm:shadow-bloc-top">
@@ -5,15 +7,11 @@ export default function Footer() {
         <a href="/" className="hover:underline">
           Accueil
         </a>
-        <a href="/jurassic-islas" className="hover:underline">
-          Jurassic Islas
-        </a>
-        <a href="/ultime-victime" className="hover:underline">
-          Ultime Victime
-        </a>
-        <a href="/monster-snacks" className="hover:underline">
-          Monster Snacks
-        </a>
+        {Object.values(gameList).map((game) => (
+          <a key={game.name} className="hover:underline" href={game.path}>
+            {game.name}
+          </a>
+        ))}
         <a href="/contact" className="hover:underline">
           Contact
         </a>
