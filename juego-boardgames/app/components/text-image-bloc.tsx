@@ -68,8 +68,8 @@ export default function TextImageBloc(props: {
                 <Image
                   src={props.image.source}
                   alt={props.image.source}
-                  width={0}
-                  height={0}
+                  width={1000}
+                  height={1000}
                   className="h-full w-auto object-contain"
                   sizes="100vw"
                 />
