@@ -18,7 +18,7 @@ const gameList: Record<string, Game> = {
   monsterSnacks: {
     name: "Monster Snacks",
     path: "/monster-snacks",
-    image: "/image_monster_snack.png",
+    image: "/Logo_MonsterSnacks.png",
   },
 };
 

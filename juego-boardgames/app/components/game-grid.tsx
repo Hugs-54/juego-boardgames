@@ -16,11 +16,11 @@ export default function GameGrid() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-6 p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-4">
         {games.map((game) => (
           <Link key={game.name} href={game.path} className="block">
             <div className="bg-white rounded-3xl p-4 flex flex-col items-center shadow-item-phone sm:shadow-item">
-              <h1 className="text-md sm:text-lg md:text-xl xl:text-4xl text-center font-bree text-[#305B68] my-1 sm:my-2 md:my-3">
+              <h1 className="text-sm sm:text-lg md:text-xl xl:text-4xl text-center font-bree text-[#305B68] my-1 sm:my-2 md:my-3">
                 {game.name}
               </h1>
 

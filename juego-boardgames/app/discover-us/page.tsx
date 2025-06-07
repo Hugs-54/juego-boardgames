@@ -2,6 +2,7 @@ import React from "react";
 import TitlePage from "../components/title-page";
 import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
+import Team from "../components/team";
 
 export default function DiscoverUS() {
   return (
@@ -17,16 +18,7 @@ export default function DiscoverUS() {
         text="A travers ses jeux, Ju&Go a pour objectif de créer des expériences mémorables, divertissantes et le plus important, amusantes. Ju&Go a pour ambition de séduire et de convaincre les maisons d'éditions afin de voir ses jeux commercialisés. Et ainsi permettre au public de jouer aux expériences que Ju&Go leur propose."
         isWhite
       ></TextImageBloc>
-      <TextImageBloc
-        title="Qui sommes-nous ?"
-        text={
-          <>
-            Julien, expert en découpage de coin de carte. <br />
-            & <br />
-            Hugo, expert en création de tableur.
-          </>
-        }
-      ></TextImageBloc>
+      <Team></Team>
       <TextImageBloc
         image={{
           source: "/Logo_JueGo.png",

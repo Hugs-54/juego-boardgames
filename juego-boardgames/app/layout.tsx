@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bree_Serif, Inter } from "next/font/google";
+import { Bowlby_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar/navbar";
 
@@ -16,13 +17,19 @@ const breeSerif = Bree_Serif({
   variable: "--font-bree", // utile pour Tailwind
 });
 
+const bowlby = Bowlby_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bowlby",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${breeSerif.variable}`}>
+    <html lang="fr" className={`${breeSerif.variable} ${bowlby.variable}`}>
       <body className={`${inter.className}`}>
         <header>
           <Navbar />

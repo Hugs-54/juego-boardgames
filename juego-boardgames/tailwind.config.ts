@@ -19,6 +19,7 @@ const config: Config = {
       },
       fontFamily: {
         bree: ['var(--font-bree)', 'serif'],
+        bowlby: ['var(--font-bowlby)'],
       },
       translate: {
         'custom-y-303': '303px',
