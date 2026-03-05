@@ -32,7 +32,7 @@ export default function PassionnementFolie() {
         Usez d'obersvation et d'anticipation pour récolter les fleurs avant vos adversaires.
 "
         image={{
-          source: "/mockup_palf.png",
+          source: "/Mockup_palf.png",
           isLeft: true,
         }}
         isWhite
