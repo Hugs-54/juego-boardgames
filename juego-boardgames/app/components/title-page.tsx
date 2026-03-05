@@ -6,18 +6,31 @@ export default function TitlePage(props: {
   title2?: string;
   imgSrc: string;
   text?: React.ReactNode;
+  hasBigTitle?: boolean;
 }) {
   return (
     <>
       <div className="grid grid-cols-2 font-bree mt-2 md:mt-14 xl:mt-16">
         <div className="mt-4 sm:mt-10 md:mt-14 xl:mt-16"></div>
         <div className="col-start-1 row-start-2 text-center flex items-end justify-center">
-          <p className="text-[#58937E] text-3xl sm:text-6xl md:text-[80px] -mb-[6px] sm:-mb-1.5 md:-mb-2 xl:text-9xl xl:-mb-4">
+          <p
+            className={`text-[#58937E] ${
+              props.hasBigTitle
+                ? "text-1xl sm:text-4xl md:text-[50px] -mb-[6px] sm:-mb-1.5 md:mb-0 xl:text-8xl xl:-mb-3"
+                : "text-3xl sm:text-6xl md:text-[80px] -mb-[6px] sm:-mb-1.5 md:-mb-2 xl:text-9xl xl:-mb-4"
+            }`}
+          >
             {props.title1}
           </p>
         </div>
         <div className="col-start-1 row-start-3 text-center flex items-start justify-center">
-          <p className="text-white text-3xl sm:text-6xl md:text-[80px] xl:text-9xl -mt-2.5 sm:-mt-[14px] md:-mt-[19px] xl:-mt-[30px]">
+          <p
+            className={`text-white ${
+              props.hasBigTitle
+                ? "text-1xl sm:text-4xl md:text-[50px] xl:text-8xl -mt-2 sm:-mt-[10px] md:-mt-[8px] xl:-mt-[24px]"
+                : "text-3xl sm:text-6xl md:text-[80px] xl:text-9xl -mt-2.5 sm:-mt-[14px] md:-mt-[19px] xl:-mt-[30px]"
+            }`}
+          >
             {props.title2}
           </p>
         </div>
