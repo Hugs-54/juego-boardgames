@@ -9,7 +9,7 @@ import gameList from "../games-list";
 export default function MonsterSnacks() {
   return (
     <>
-      <TitlePage
+      {/* <TitlePage
         title1={gameList.monsterSnacks.name.split(" ")[0].toUpperCase()}
         title2={gameList.monsterSnacks.name.split(" ")[1].toUpperCase()}
         imgSrc={gameList.monsterSnacks.image}
@@ -22,7 +22,7 @@ export default function MonsterSnacks() {
         isWhite
       ></TextImageBloc>
       <ContactForm withTitle withTopShadow></ContactForm>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
