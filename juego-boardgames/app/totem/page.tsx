@@ -9,7 +9,7 @@ import gameList from "../games-list";
 export default function Totem() {
   return (
     <>
-      <TitlePage
+      {/* <TitlePage
         hasBigTitle={true}
         title1={gameList.totem.title.split(" ")[0].toUpperCase()}
         imgSrc={gameList.totem.image}
@@ -32,7 +32,7 @@ export default function Totem() {
         isWhite
       ></TextImageBloc>
       <ContactForm withTitle withTopShadow></ContactForm>
-      <Footer></Footer>
+      <Footer></Footer>*/}
     </>
   );
 }
