@@ -3,8 +3,14 @@ import Footer from "./components/footer";
 import TextImageBloc from "./components/text-image-bloc";
 import TitlePage from "./components/title-page";
 import GameGrid from "./components/game-grid";
+import gameList from "./games-list";
 
 export default function Home() {
+  const featuredGame = Object.values(gameList).find((g) => g.featured);
+
+  const truncate = (text: string, maxLength: number = 150) =>
+    text.length > maxLength ? text.slice(0, maxLength).trimEnd() + "..." : text;
+
   return (
     <main>
       <TitlePage
@@ -13,6 +19,27 @@ export default function Home() {
         imgSrc="/Logo_JueGo.png"
       ></TitlePage>
       <div className="bg-[#58937E]">
+        {featuredGame && (
+          <Link href={featuredGame.path} className="block">
+            <TextImageBloc
+              title="A la une"
+              text={
+                <>
+                  <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-5xl text-[#305B68] pb-4">
+                    {featuredGame.name}
+                  </h1>
+                  <p>{truncate(featuredGame.description)}</p>
+                </>
+              }
+              image={{
+                source: featuredGame.image,
+                isLeft: false,
+              }}
+              hideShadowBloc
+            ></TextImageBloc>
+          </Link>
+        )}
+
         <Link href="/discover-us" className="block">
           <TextImageBloc
             text={
@@ -33,28 +60,7 @@ export default function Home() {
             hideShadowBloc
           ></TextImageBloc>
         </Link>
-        <Link href="/jurassic-islas" className="block">
-          <TextImageBloc
-            title="A la une"
-            text={
-              <>
-                <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-5xl text-[#305B68] pb-4">
-                  Jurassic Islas
-                </h1>
-                <p>
-                  L&apos;extravagant et riche PDG Julian Hugont, vous fait lègue
-                  d&apos;un archipel d&apos;îles au large du Costa Rica. Il
-                  compte sur vous pour construire, malgré toutes les...
-                </p>
-              </>
-            }
-            image={{
-              source: "/Jurassic_Islas_Logo.png",
-              isLeft: false,
-            }}
-            hideShadowBloc
-          ></TextImageBloc>
-        </Link>
+
         <GameGrid></GameGrid>
         <Footer></Footer>
       </div>

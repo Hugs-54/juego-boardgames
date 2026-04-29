@@ -16,6 +16,8 @@ export default function Totem() {
         text="Les clans de l'Ouest se sont rassemblés pour élire le clan qui dirigera la région. 
         Le totem déterminera qui aura réussit à dépasser les autres.
 "
+        authors={["Hugo"]}
+        dates="2026 - 20XX"
       ></TitlePage>
       <GameInfo time="15'" age="7+" nbPlayer="2-6"></GameInfo>
       <TextImageBloc

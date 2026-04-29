@@ -5,6 +5,7 @@ import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import ContactForm from "../components/contact-form";
 import gameList from "../games-list";
+import GameAuthors from "../components/game-authors";
 
 export default function PassionnementFolie() {
   return (
@@ -24,12 +25,14 @@ export default function PassionnementFolie() {
         réalisera le plus beau bouquet de fleurs. Mais la tâche ne sera pas évidente, tous les 
         jardiniers devront partager le même jardin, alors attention au coup fourré.
 "
+        authors={gameList.palf.authors}
+        dates={gameList.palf.dates}
       ></TitlePage>
-      <GameInfo time="15'" age="7+" nbPlayer="2-5"></GameInfo>
+      <GameInfo time="15'" age="10+" nbPlayer="2-5"></GameInfo>
       <TextImageBloc
         title="Planter"
         text="Superposez judicieusement les tuiles comprenant des fragments de fleurs pour reconstituer les fleurs tant convoitées.
-        Usez d'obersvation et d'anticipation pour récolter les fleurs avant vos adversaires.
+        Usez d'observation et d'anticipation pour récolter les fleurs avant vos adversaires.
 "
         image={{
           source: "/Mockup_palf.png",
@@ -48,8 +51,7 @@ export default function PassionnementFolie() {
       ></TextImageBloc>
       <TextImageBloc
         title="Statut"
-        text="Bien que le jeu soit dans un état stable, des supervisions supplémentaires 
-        sont appliquées pour améliorer autant que possible les mécaniques, et surtout le fun procuré !"
+        text="Le jeu est dans un état stable. Les tests continuent pour l'améliorer au maximum."
         isWhite
       ></TextImageBloc>
       <ContactForm withTitle withTopShadow></ContactForm>

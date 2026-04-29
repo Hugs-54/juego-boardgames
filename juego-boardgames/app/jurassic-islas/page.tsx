@@ -21,6 +21,8 @@ export default function JurassicIslas() {
             les plus féroces des dinosaures afin d’accueillir le plus de
             visiteurs. Attention, les autres héritiers ne vous laisseront pas
             faire…"
+        authors={gameList.jurassicIslas.authors}
+        dates={gameList.jurassicIslas.dates}
       ></TitlePage>
       <GameInfo time="30'" age="7+" nbPlayer="2-6"></GameInfo>
       <TextImageBloc

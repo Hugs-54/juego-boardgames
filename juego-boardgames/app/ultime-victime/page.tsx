@@ -14,8 +14,10 @@ export default function UltimeVictime() {
         title2={gameList.ultimeVictime.name.split(" ")[1].toUpperCase()}
         imgSrc={gameList.ultimeVictime.image}
         text="Bienvenue à Bad-Horror City, dans la ville la plus dangereuse du monde, où s’affrontent les plus grands tueurs du cinéma d’horreur dans une course à l’ultime victime. En effet il ne reste plus qu’une seule et Ultime victime à Bad-Horror City ! Mais le chemin pour l’atteindre ne sera pas facile ! Chaque grand tueur devra avancer prudemment vers l’ultime Victime et devra être encore plus horrible avec ses adversaires pour y arriver !"
+        authors={gameList.ultimeVictime.authors}
+        dates={gameList.ultimeVictime.dates}
       ></TitlePage>
-      <GameInfo time="30'" age="12+" nbPlayer="4-8"></GameInfo>
+      <GameInfo time="60'" age="12+" nbPlayer="4-8"></GameInfo>
       <TextImageBloc
         image={{ source: "/cartes_perso_ultime_victime.png", isLeft: true }}
         title="Principe"
@@ -73,7 +75,9 @@ export default function UltimeVictime() {
       ></TextImageBloc>
       <TextImageBloc
         title="Statut"
-        text="Ultime Victime est sur sa finalisation après tests. Depuis décembre 2022, et quelques différentes versions avec de nombreux tests, retouches et ajustements, Ultime Victime est bientôt prêt à être proposé à l’édition. N’hésitez pas à nous contacter si ce projet vous intéresse !"
+        text="Ultime Victime est finalisé ! Depuis décembre 2022, et quelques différentes versions avec de nombreux tests, 
+        retouches et ajustements, Ultime Victime est prêt à être proposé à l'édition. N'hésitez pas à nous contacter si ce 
+        projet vous intéresse ou s'il vous effraie profondément !"
         isWhite
       ></TextImageBloc>
       <ContactForm withTitle withTopShadow></ContactForm>
