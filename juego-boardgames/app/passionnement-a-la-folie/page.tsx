@@ -5,7 +5,8 @@ import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import ContactForm from "../components/contact-form";
 import gameList from "../games-list";
-import GameAuthors from "../components/game-authors";
+import BubbleCloud from "../components/bubble-cloud";
+import Timeline from "../components/timeline";
 
 export default function PassionnementFolie() {
   return (
@@ -29,6 +30,13 @@ export default function PassionnementFolie() {
         dates={gameList.palf.dates}
       ></TitlePage>
       <GameInfo time="15'" age="10+" nbPlayer="2-5"></GameInfo>
+      <BubbleCloud
+        isWhite
+        main="Recouvrement"
+        bubble1="Anticipation"
+        bubble2="Fleurs"
+        bubble3="Observation"
+      />
       <TextImageBloc
         title="Planter"
         text="Superposez judicieusement les tuiles comprenant des fragments de fleurs pour reconstituer les fleurs tant convoitées.
@@ -49,6 +57,15 @@ export default function PassionnementFolie() {
           isLeft: false,
         }}
       ></TextImageBloc>
+      <Timeline
+        isWhite
+        steps={[
+          { label: "Premières idées", date: "Juin 2025" },
+          { label: "Premiers tests", date: "Juillet 2025" },
+          { label: "Version stable", date: "Décembre 2025" },
+          { label: "Version améliorée", date: "Avril 2026" },
+        ]}
+      />
       <TextImageBloc
         title="Statut"
         text="Le jeu est dans un état stable. Les tests continuent pour l'améliorer au maximum."

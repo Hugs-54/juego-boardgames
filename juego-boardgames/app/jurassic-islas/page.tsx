@@ -6,6 +6,8 @@ import Footer from "../components/footer";
 import VideoBloc from "../components/video-bloc";
 import ContactForm from "../components/contact-form";
 import gameList from "../games-list";
+import Timeline from "../components/timeline";
+import BubbleCloud from "../components/bubble-cloud";
 
 export default function JurassicIslas() {
   return (
@@ -25,6 +27,13 @@ export default function JurassicIslas() {
         dates={gameList.jurassicIslas.dates}
       ></TitlePage>
       <GameInfo time="30'" age="7+" nbPlayer="2-6"></GameInfo>
+      <BubbleCloud
+        isWhite
+        main="Dinosaure"
+        bubble1="Famille"
+        bubble2="Gestion"
+        bubble3="Stratégie"
+      />
       <TextImageBloc
         title="Construisez"
         text="Obtenez une île, choisissez bien car certaines pourraient se révéler dangereuses ! 
@@ -52,6 +61,14 @@ export default function JurassicIslas() {
         ytbLink="https://www.youtube.com/embed/GqiO7WTwzFE"
         isWhite
       ></VideoBloc>
+      <Timeline
+        steps={[
+          { label: "Premières idées", date: "Juillet 2020" },
+          { label: "Premier prototype", date: "Novembre 2020" },
+          { label: "Prototype final", date: "Juillet 2021" },
+          { label: "Soumission aux ME", date: "Octobre 2022" },
+        ]}
+      />
       <TextImageBloc
         title="Statut"
         text="Après deux ans de développement, plusieurs versions du jeu et des

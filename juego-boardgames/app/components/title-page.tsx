@@ -12,7 +12,7 @@ export default function TitlePage(props: {
 }) {
   return (
     <>
-      <div className="grid grid-cols-2 font-bree mt-2 md:mt-14 xl:mt-16">
+      <div className="grid grid-cols-2 grid-rows-[auto_auto_auto_auto_auto] font-bree mt-10 sm:mt-20 md:mt-28 xl:mt-40">
         <div className="mt-4 sm:mt-10 md:mt-14 xl:mt-16"></div>
         <div className="col-start-1 row-start-2 text-center flex items-end justify-center">
           <p
@@ -36,8 +36,8 @@ export default function TitlePage(props: {
             {props.title2}
           </p>
         </div>
-        <div className="row-span-3 col-start-2 row-start-1 flex justify-center items-center px-2 sm:px-4 md:px-8 xl:px-12">
-          <div className="relative w-full h-40 sm:h-56 md:h-72 xl:h-[420px]">
+        <div className="row-span-4 col-start-2 row-start-1 flex justify-center items-center px-2 sm:px-4 md:px-8 xl:px-12">
+          <div className="relative w-3/4 h-40 sm:h-56 md:h-72 xl:h-[420px]">
             <Image
               fill
               className="object-contain"
@@ -49,7 +49,7 @@ export default function TitlePage(props: {
 
         {/* Auteurs + dates — row-start-4, col-start-1 */}
         {props.authors && props.dates && (
-          <div className="col-start-1 row-start-4 flex justify-center pb-1 sm:pb-2 md:pb-3 xl:pb-4 pt-0">
+          <div className="col-start-1 row-start-4 flex justify-center self-start pb-1 sm:pb-2 md:pb-3 xl:pb-4 pt-8 sm:pt-10 md:pt-14 xl:pt-20">
             <div className="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-item-phone sm:shadow-item flex items-center gap-2 sm:gap-5 md:gap-6 px-2 sm:px-6 md:px-8 xl:px-10 py-1.5 sm:py-3 md:py-4 xl:py-5">
               <div className="flex">
                 {props.authors.map((author, i) => (

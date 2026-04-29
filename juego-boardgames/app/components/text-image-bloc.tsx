@@ -57,20 +57,17 @@ export default function TextImageBloc(props: {
           {props.image && (
             <div
               className={`${
-                props.image?.source
-                  ? props.image?.isLeft
-                    ? "sm:row-start-1 sm:col-start-1 sm:col-end-3"
-                    : "sm:row-start-1 sm:col-start-5 sm:col-end-7"
-                  : ""
-              } row-start-3 row-end-5 col-start-1 z-0 items-center justify-center flex`}
+                props.image?.isLeft
+                  ? "sm:row-start-1 sm:col-start-1 sm:col-end-3"
+                  : "sm:row-start-1 sm:col-start-5 sm:col-end-7"
+              } row-start-3 row-end-5 col-start-1 z-0`}
             >
-              <div className="flex items-center justify-center h-full w-full">
+              <div className="relative w-full h-full min-h-40 sm:min-h-52 md:min-h-64 xl:min-h-80">
                 <Image
                   src={props.image.source}
                   alt={props.image.source}
-                  width={1000}
-                  height={1000}
-                  className="h-full w-auto object-contain"
+                  fill
+                  className="object-contain"
                   sizes="100vw"
                 />
               </div>

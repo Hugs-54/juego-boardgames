@@ -16,7 +16,7 @@ export default function GameGrid() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-4 mb-8 sm:mb-12 md:mb-16 xl:mb-24">
         {games.map((game) => (
           <Link key={game.name} href={game.path} className="block">
             <div className="bg-white rounded-3xl p-4 flex flex-col items-center shadow-item-phone sm:shadow-item h-48 sm:h-64 md:h-72 xl:h-[420px]">

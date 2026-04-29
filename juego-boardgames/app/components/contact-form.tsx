@@ -34,7 +34,7 @@ export default function ContactForm(props: {
         "service_vb0fxk7",
         "template_5cglrmm",
         templateParams,
-        "z92xzu3GbuvuBUZLm"
+        "z92xzu3GbuvuBUZLm",
       );
       setSuccess("Votre message a été envoyé !");
       setEmail("");
@@ -68,7 +68,7 @@ export default function ContactForm(props: {
           </label>
           <input
             type="email"
-            placeholder="Exemple : email@gmail.com"
+            placeholder="Exemple : julien.hugo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="w-full mt-1 px-3 py-2 rounded-lg text-[#58937E] border-2 border-white focus:outline-none focus:border-[#58937E] md:text-2xl"
