@@ -12,6 +12,43 @@ export default function BubbleCloud(props: {
   const darkColor = "#2d5061";
   const textOnSecondary = props.isWhite ? "#FFFFFF" : darkColor;
 
+  const BubbleText = ({
+    cx,
+    cy,
+    r,
+    color,
+    size = 16,
+    children,
+  }: {
+    cx: number;
+    cy: number;
+    r: number;
+    color: string;
+    size?: number;
+    children: string;
+  }) => (
+    <foreignObject x={cx - r} y={cy - r} width={r * 2} height={r * 2}>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          color,
+          fontSize: `${size}px`,
+          fontWeight: "700",
+          lineHeight: "1.2",
+          padding: "8px",
+          boxSizing: "border-box",
+        }}
+      >
+        {children}
+      </div>
+    </foreignObject>
+  );
+
   return (
     <div
       className={`min-h-fit flex flex-col items-center justify-center font-bree mb-2 ${
@@ -26,59 +63,27 @@ export default function BubbleCloud(props: {
       >
         {/* Bulle principale */}
         <circle cx="260" cy="110" r="85" fill={darkColor} />
-        <text
-          x="260"
-          y="114"
-          textAnchor="middle"
-          fontSize="22"
-          fontWeight="700"
-          fill="white"
-          fontFamily="sans-serif"
-        >
+        <BubbleText cx={260} cy={110} r={85} color="white" size={22}>
           {props.main}
-        </text>
+        </BubbleText>
 
         {/* Bulle 1 */}
         <circle cx="550" cy="125" r="60" fill={secondaryColor} />
-        <text
-          x="550"
-          y="129"
-          textAnchor="middle"
-          fontSize="16"
-          fontWeight="700"
-          fill={textOnSecondary}
-          fontFamily="sans-serif"
-        >
+        <BubbleText cx={550} cy={125} r={60} color={textOnSecondary}>
           {props.bubble1}
-        </text>
+        </BubbleText>
 
         {/* Bulle 2 */}
         <circle cx="420" cy="240" r="60" fill={secondaryColor} />
-        <text
-          x="420"
-          y="244"
-          textAnchor="middle"
-          fontSize="16"
-          fontWeight="700"
-          fill={textOnSecondary}
-          fontFamily="sans-serif"
-        >
+        <BubbleText cx={420} cy={240} r={60} color={textOnSecondary}>
           {props.bubble2}
-        </text>
+        </BubbleText>
 
         {/* Bulle 3 */}
         <circle cx="90" cy="195" r="60" fill={secondaryColor} />
-        <text
-          x="90"
-          y="199"
-          textAnchor="middle"
-          fontSize="16"
-          fontWeight="700"
-          fill={textOnSecondary}
-          fontFamily="sans-serif"
-        >
+        <BubbleText cx={90} cy={195} r={60} color={textOnSecondary}>
           {props.bubble3}
-        </text>
+        </BubbleText>
 
         {/* Bulles décoratives */}
         <circle cx="350" cy="275" r="12" fill={secondaryColor} opacity="1" />

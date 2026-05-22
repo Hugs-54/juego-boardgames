@@ -5,10 +5,7 @@ type Step = {
   date: string;
 };
 
-export default function GameTimeline(props: {
-  steps: Step[];
-  isWhite?: boolean;
-}) {
+export default function Timeline(props: { steps: Step[]; isWhite?: boolean }) {
   const primaryColor = props.isWhite ? "#FFFFFF" : "#58937E";
   const secondaryColor = props.isWhite ? "#58937E" : "#FFFFFF";
   const lineColor = props.isWhite ? "#58937E" : "#3a6b5a";
@@ -21,10 +18,17 @@ export default function GameTimeline(props: {
       }`}
       style={{ backgroundColor: primaryColor }}
     >
+      {/* Titre */}
+      <h2
+        className="font-bold text-2xl sm:text-4xl md:text-6xl xl:text-8xl mt-8 sm:mt-10 md:mt-14 xl:mt-20"
+        style={{ color: secondaryColor }}
+      >
+        Chronologie
+      </h2>
       <div className="flex items-center w-11/12 py-8 sm:py-10 md:py-14 xl:py-20 gap-1 sm:gap-1.5">
         {/* Élément de début */}
         <div
-          className="flex-shrink-0 w-1 sm:w-1.5 md:w-2 h-5 sm:h-6 md:h-8 xl:h-12 rounded-sm"
+          className="flex-shrink-0 -mr-2 w-1 sm:w-1.5 md:w-2 h-5 sm:h-6 md:h-8 xl:h-12 rounded-sm"
           style={{ backgroundColor: lineColor }}
         />
 
@@ -88,7 +92,7 @@ export default function GameTimeline(props: {
 
         {/* Flèche */}
         <div
-          className="flex-shrink-0 ml-0.5 w-0 h-0"
+          className="flex-shrink-0 -ml-2 w-0 h-0"
           style={{
             borderTop: "13px solid transparent",
             borderBottom: "13px solid transparent",

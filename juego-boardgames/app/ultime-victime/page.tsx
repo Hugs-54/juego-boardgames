@@ -5,6 +5,12 @@ import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import ContactForm from "../components/contact-form";
 import gameList from "../games-list";
+import GameTimeline from "../components/timeline";
+import Timeline from "../components/timeline";
+import BubbleCloud from "../components/bubble-cloud";
+import Statistics from "../components/statistics";
+import Review from "../components/review";
+import Gallery from "../components/gallery";
 
 export default function UltimeVictime() {
   return (
@@ -18,6 +24,13 @@ export default function UltimeVictime() {
         dates={gameList.ultimeVictime.dates}
       ></TitlePage>
       <GameInfo time="60'" age="12+" nbPlayer="4-8"></GameInfo>
+      <BubbleCloud
+        isWhite
+        main="Ambiance"
+        bubble1="Films d'horreur"
+        bubble2="Gages"
+        bubble3="Mauvaise chance"
+      />
       <TextImageBloc
         image={{ source: "/cartes_perso_ultime_victime.png", isLeft: true }}
         title="Principe"
@@ -73,13 +86,72 @@ export default function UltimeVictime() {
           </>
         }
       ></TextImageBloc>
+      <Review
+        isWhite
+        reviews={[
+          {
+            name: "Théa F.",
+            date: "Mai 2026",
+            text: "Superbe jeu d'ambiance entre amis ou en famille ! Immersif et innovant. De belles références horrifiques.",
+          },
+          {
+            name: "Gaëlle L.C.",
+            date: "Mai 2026",
+            text: "Si vous voulez passer une bonne soirée, avec un soupçon de frisson, c'est le jeu d'ambiance qu'il vous faut. Il y a de quoi voir vos amis comme jamais vous n'auriez pu les imaginer. Je recommande à 100%",
+          },
+          {
+            name: "Romane N.",
+            date: "Mai 2026",
+            text: "Super concept, Ultime Victime est hyper prenant et met direct une bonne ambiance dès les premières minutes. Les parties sont fun, fluides et donnent vraiment envie de rejouer encore et encore.",
+          },
+          {
+            name: "Julie B.",
+            date: "Mai 2026",
+            text: "Véritable jeu d'ambiance où l'on progresse avec des contraintes qui font peur mais aussi rire. On s'amuse tout en révisant ses classiques !",
+          },
+          {
+            name: "Lauryn L.",
+            date: "Mai 2026",
+            text: "Un jeu d'ambiance qui réunit aussi bien les amateurs de frissons que les plus peureux autour de la table ! J'ai beaucoup apprécié que le jeu reste tout à fait compréhensible même si on a vu aucun film d'horreur.",
+          },
+        ]}
+      />
       <TextImageBloc
         title="Statut"
         text="Ultime Victime est finalisé ! Depuis décembre 2022, et quelques différentes versions avec de nombreux tests, 
-        retouches et ajustements, Ultime Victime est prêt à être proposé à l'édition. N'hésitez pas à nous contacter si ce 
-        projet vous intéresse ou s'il vous effraie profondément !"
-        isWhite
+        retouches et ajustements, Ultime Victime est prêt à être proposé à l'édition. Illustrateurs ou éditeurs, 
+        n'hésitez pas à nous contacter si ce projet vous intéresse ou s'il vous effraie profondément !"
       ></TextImageBloc>
+
+      <Timeline
+        isWhite
+        steps={[
+          { label: "Idée du projet", date: "Décembre 2022" },
+          { label: "1er prototype", date: "Mars 2023" },
+
+          { label: "4ème prototype validé", date: "Décembre 2025" },
+          {
+            label: "Jeu finalisé et disponible à l'édition",
+            date: "Avril 2026",
+          },
+        ]}
+      />
+      <Gallery
+        images={[
+          "/boite_de_jeu_UV.png",
+          "/regles_du_jeu_UV.png",
+          "/anatomie_dune_carte_UV.png",
+          "/plateau_de_jeu_UV.png",
+        ]}
+      />
+      <Statistics
+        isWhite
+        stats={[
+          { value: "46", label: "Façons de souffrir" },
+          { value: "1", label: "Extension déjà disponible" },
+          { value: "8", label: "armes différentes" },
+        ]}
+      />
       <ContactForm withTitle withTopShadow></ContactForm>
       <Footer></Footer>
     </>
