@@ -28,7 +28,7 @@ export default function Team() {
             Concierge en chef sénior et passionné par les jeux depuis toujours.
           </p>
           <p className="mt-2 font-semibold text-sm sm:text-lg md:text-xl">
-            Expert en découpage de coin de carte
+            Expert en design de carte
           </p>
         </div>
 

@@ -33,10 +33,10 @@ export default function PassionnementFolie() {
         authors={gameList.palf.authors}
         dates={gameList.palf.dates}
       ></TitlePage>
-      <GameInfo time="15'" age="10+" nbPlayer="2-5"></GameInfo>
+      <GameInfo time="15'" age="8+" nbPlayer="2-5"></GameInfo>
       <BubbleCloud
         isWhite
-        main="Recouvrement"
+        main="Recouvrement partiel"
         bubble1="Anticipation"
         bubble2="Fleurs"
         bubble3="Observation"
@@ -61,16 +61,9 @@ export default function PassionnementFolie() {
           isLeft: false,
         }}
       ></TextImageBloc>
-      <Timeline
-        isWhite
-        steps={[
-          { label: "Premières idées", date: "Juin 2025" },
-          { label: "Premiers tests", date: "Juillet 2025" },
-          { label: "Version stable", date: "Décembre 2025" },
-          { label: "Version améliorée", date: "Avril 2026" },
-        ]}
-      />
+
       <Review
+        isWhite
         reviews={[
           {
             name: "Lauryn L.",
@@ -99,6 +92,9 @@ export default function PassionnementFolie() {
           },
         ]}
       />
+      <Gallery
+        images={[gameList.palf.image, "/Mockup_palf.png", "/insectes_palf.png"]}
+      />
       <TextImageBloc
         isWhite
         title="Statut"
@@ -111,11 +107,17 @@ export default function PassionnementFolie() {
           { value: "66", label: "cartes" },
         ]}
       />
-      <Gallery
+
+      <Timeline
         isWhite
-        images={[gameList.palf.image, "/Mockup_palf.png", "/insectes_palf.png"]}
+        steps={[
+          { label: "Premières idées", date: "Juin 2025" },
+          { label: "Premiers tests", date: "Juillet 2025" },
+          { label: "Version stable", date: "Décembre 2025" },
+          { label: "Version améliorée", date: "Avril 2026" },
+        ]}
       />
-      {/* <Playtesters
+      <Playtesters
         isWhite
         playtesters={[
           "Lauryn",
@@ -139,7 +141,7 @@ export default function PassionnementFolie() {
           "Ernestine",
           "Gérard",
         ]}
-      /> */}
+      />
 
       <ContactForm withTitle withTopShadow></ContactForm>
       <Footer></Footer>

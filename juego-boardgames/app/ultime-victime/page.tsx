@@ -116,13 +116,29 @@ export default function UltimeVictime() {
           },
         ]}
       />
+      <Gallery
+        images={[
+          "/boite_de_jeu_UV.png",
+          "/regles_du_jeu_UV.png",
+          "/anatomie_dune_carte_UV.png",
+          "/plateau_de_jeu_UV.png",
+        ]}
+      />
       <TextImageBloc
+        isWhite
         title="Statut"
         text="Ultime Victime est finalisé ! Depuis décembre 2022, et quelques différentes versions avec de nombreux tests, 
         retouches et ajustements, Ultime Victime est prêt à être proposé à l'édition. Illustrateurs ou éditeurs, 
         n'hésitez pas à nous contacter si ce projet vous intéresse ou s'il vous effraie profondément !"
       ></TextImageBloc>
 
+      <Statistics
+        stats={[
+          { value: "46", label: "Façons de souffrir" },
+          { value: "1", label: "Extension déjà disponible" },
+          { value: "8", label: "armes différentes" },
+        ]}
+      />
       <Timeline
         isWhite
         steps={[
@@ -134,22 +150,6 @@ export default function UltimeVictime() {
             label: "Jeu finalisé et disponible à l'édition",
             date: "Avril 2026",
           },
-        ]}
-      />
-      <Gallery
-        images={[
-          "/boite_de_jeu_UV.png",
-          "/regles_du_jeu_UV.png",
-          "/anatomie_dune_carte_UV.png",
-          "/plateau_de_jeu_UV.png",
-        ]}
-      />
-      <Statistics
-        isWhite
-        stats={[
-          { value: "46", label: "Façons de souffrir" },
-          { value: "1", label: "Extension déjà disponible" },
-          { value: "8", label: "armes différentes" },
         ]}
       />
       <ContactForm withTitle withTopShadow></ContactForm>

@@ -15,7 +15,7 @@ export default function DiscoverUS() {
       ></TitlePage>
       <TextImageBloc
         title="Ambitions"
-        text="A travers ses jeux, Ju&Go a pour objectif de créer des expériences mémorables, divertissantes et le plus important, amusantes. Ju&Go a pour ambition de séduire et de convaincre les maisons d'éditions afin de voir ses jeux commercialisés. Et ainsi permettre au public de jouer aux expériences que Ju&Go leur propose."
+        text="A travers ses jeux, Ju&Go a pour objectif d'innover, de créer des expériences mémorables, divertissantes et le plus important, amusantes. Ju&Go a pour ambition de séduire et de convaincre les maisons d'édition afin de voir ses jeux commercialisés. Et ainsi permettre au public de jouer aux expériences que Ju&Go leur propose."
         isWhite
       ></TextImageBloc>
       <Team></Team>

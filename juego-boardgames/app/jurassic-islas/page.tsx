@@ -87,22 +87,7 @@ export default function JurassicIslas() {
           },
         ]}
       />
-      <Timeline
-        isWhite
-        steps={[
-          { label: "Premières idées", date: "Juillet 2020" },
-          { label: "Premier prototype", date: "Novembre 2020" },
-          { label: "Prototype final", date: "Juillet 2021" },
-          { label: "Soumission aux ME", date: "Octobre 2022" },
-        ]}
-      />
-      <Statistics
-        stats={[
-          { value: "60", label: "cartes uniques" },
-          { value: "+100", label: "parties jouées" },
-          { value: "230", label: "cartes" },
-        ]}
-      />
+
       <TextImageBloc
         title="Statut"
         text="Après deux ans de développement, plusieurs versions du jeu et des
@@ -115,7 +100,22 @@ export default function JurassicIslas() {
               "
         isWhite
       ></TextImageBloc>
-
+      <Statistics
+        stats={[
+          { value: "60", label: "cartes uniques" },
+          { value: "+100", label: "parties jouées" },
+          { value: "230", label: "cartes" },
+        ]}
+      />
+      <Timeline
+        isWhite
+        steps={[
+          { label: "Premières idées", date: "Juillet 2020" },
+          { label: "Premier prototype", date: "Novembre 2020" },
+          { label: "Prototype final", date: "Juillet 2021" },
+          { label: "Soumission aux ME", date: "Octobre 2022" },
+        ]}
+      />
       <ContactForm withTitle withTopShadow></ContactForm>
       <Footer></Footer>
     </>
