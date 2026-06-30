@@ -41,7 +41,7 @@ const gameListRaw: Record<string, Game> = {
     path: "/passionnement-a-la-folie",
     image: "/logo_palf.png",
     authors: ["Hugo"],
-    dates: "2025 – 20XX",
+    dates: "2025 – 2026",
     dateStart: 2025,
     description:
       "Rose, la fleuriste du village, acceptera un rendez-vous amoureux au jardinier qui réalisera le plus beau bouquet de fleurs. Mais la tâche ne sera pas évidente, tous les jardiniers devront partager le même jardin, alors attention au coup fourré.",

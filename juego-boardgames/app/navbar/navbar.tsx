@@ -10,6 +10,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import gameList from "../games-list";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,11 +33,13 @@ export default function Navbar() {
         </Link>
 
         <div className={`hidden md:flex md:text-xl xl:text-4xl items-center`}>
-          <Link className="text-[#58937E] hover:text-[#73bea4] px-5" href="/">
+          <Link
+            className="text-[#58937E] hover:text-[#73bea4] px-5 hover:scale-110 transition-transform"
+            href="/"
+          >
             ACCUEIL
           </Link>
-
-          <div className="group px-5 ">
+          <div className="group px-5 hover:scale-110 transition-transform">
             <p className="text-[#58937E] hover:text-[#73bea4] cursor-default group-hover:underline md:underline-offset-10 xl:underline-offset-20">
               JEUX
             </p>
@@ -52,18 +55,42 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-
           <Link
-            className="text-[#58937E] hover:text-[#73bea4] px-5"
+            className="text-[#58937E] hover:text-[#73bea4] px-5 hover:scale-110 transition-transform"
             href="/discover-us"
           >
             NOUS DECOUVRIR
           </Link>
           <Link
-            className="text-[#58937E] hover:text-[#73bea4] px-5"
+            className="text-[#58937E] hover:text-[#73bea4] px-5 hover:scale-110 transition-transform"
             href="/contact"
           >
             CONTACT
+          </Link>
+          <Link
+            href="https://www.instagram.com/juego_boardgames/?hl=fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#58937E] hover:text-[#73bea4] pl-5 pr-3 hover:scale-110 transition-transform"
+          >
+            <FaInstagram />
+          </Link>
+          <Link
+            href="https://www.facebook.com/profile.php?id=61590285694604"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#58937E] hover:text-[#73bea4] pr-3 hover:scale-110 transition-transform"
+          >
+            <FaFacebook />
+          </Link>
+
+          <Link
+            href="https://www.youtube.com/@JueGoBoardgames"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#58937E] hover:text-[#73bea4] hover:scale-110 transition-transform"
+          >
+            <FaYoutube />
           </Link>
         </div>
 
@@ -87,7 +114,6 @@ export default function Navbar() {
             <button className="start mb-5 mt-6" onClick={toggleMenu}>
               <ChevronRightIcon className="size-10 text-white hover:text-[#dffaf0]" />
             </button>
-
             <Link
               className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
               href="/"
@@ -95,7 +121,6 @@ export default function Navbar() {
             >
               Accueil
             </Link>
-
             <div className="flex flex-col mb-1">
               <p
                 className={`mb-2 text-white text-base sm:text-2xl cursor-default`}
@@ -113,7 +138,6 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-
             <Link
               className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
               href="/discover-us"
@@ -128,6 +152,32 @@ export default function Navbar() {
             >
               Contact
             </Link>
+            <div className="flex flex-row">
+              <Link
+                href="https://www.instagram.com/juego_boardgames/?hl=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-white hover:text-[#dffaf0] pr-3 sm:text-2xl"
+              >
+                <FaInstagram />
+              </Link>
+              <Link
+                href="https://www.facebook.com/profile.php?id=61590285694604"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-white hover:text-[#dffaf0] pr-3 sm:text-2xl"
+              >
+                <FaFacebook />
+              </Link>
+              <Link
+                href="https://www.youtube.com/@JueGoBoardgames"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#dffaf0] sm:text-2xl"
+              >
+                <FaYoutube />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

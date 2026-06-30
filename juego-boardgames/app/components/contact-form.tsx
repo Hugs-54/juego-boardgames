@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { title } from "process";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 export default function ContactForm(props: {
   withTitle?: boolean;
@@ -119,6 +121,38 @@ export default function ContactForm(props: {
           </button>
         </div>
       </form>
+      <div className="mt-8 flex flex-col items-center text-white">
+        <p className="mb-4 md:text-2xl">Suivez-nous également sur</p>
+
+        <div className="flex gap-4 text-4xl">
+          <Link
+            href="https://www.instagram.com/juego_boardgames/?hl=fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <FaInstagram />
+          </Link>
+
+          <Link
+            href="https://www.facebook.com/profile.php?id=61590285694604"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <FaFacebook />
+          </Link>
+
+          <Link
+            href="https://www.youtube.com/@JueGoBoardgames"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform"
+          >
+            <FaYoutube />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

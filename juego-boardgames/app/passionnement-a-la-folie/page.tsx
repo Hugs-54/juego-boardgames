@@ -26,14 +26,15 @@ export default function PassionnementFolie() {
           gameList.palf.title.split(" ")[3].toUpperCase()
         }
         imgSrc={gameList.palf.image}
-        text="Rose, la fleuriste du village, acceptera un rendez-vous amoureux au jardinier qui 
-        réalisera le plus beau bouquet de fleurs. Mais la tâche ne sera pas évidente, tous les 
-        jardiniers devront partager le même jardin, alors attention au coup fourré.
+        text="Rose, la fleuriste du village, acceptera un rendez-vous amoureux au jardinier 
+        qui réalisera le plus beau bouquet de fleurs. Superposer partiellement des pétales 
+        pour reconstituer des fleurs et ainsi compléter vos bouquets. Mais la tâche ne sera 
+        pas évidente, tous les jardiniers devront partager le même jardin, alors attention aux mauvaises herbes.	
 "
         authors={gameList.palf.authors}
         dates={gameList.palf.dates}
       ></TitlePage>
-      <GameInfo time="15'" age="8+" nbPlayer="2-5"></GameInfo>
+      <GameInfo time="15'" age="10+" nbPlayer="2-5"></GameInfo>
       <BubbleCloud
         isWhite
         main="Recouvrement partiel"
@@ -42,12 +43,14 @@ export default function PassionnementFolie() {
         bubble3="Observation"
       />
       <TextImageBloc
-        title="Planter"
-        text="Superposez judicieusement les tuiles comprenant des fragments de fleurs pour reconstituer les fleurs tant convoitées.
-        Usez d'observation et d'anticipation pour récolter les fleurs avant vos adversaires.
+        title="Recouvrement partiel"
+        text="La force du jeu réside dans sa mécanique de recouvrement partiel de tuile. 
+        Pour reconstituer une fleur, recouvrez judicieusement les tuiles pour assembler les morceaux de fleurs entre eux. 
+        Cette mécanique offre une grande possibilité de placement et de recouvrement, beaucoup de réflexion, des stratégies de pose variés, de la satisfaction et de la rejouabilité. 
+
 "
         image={{
-          source: "/Mockup_palf.png",
+          source: "/PALF_superposition_exemple.png",
           isLeft: true,
         }}
         isWhite
@@ -90,6 +93,11 @@ export default function PassionnementFolie() {
             date: "Mai 2026",
             text: 'Le jeu a un petit côté domino qui est intéressant, les "missions" personnelles donnent une perspective agréable au jeu, tout en devant cueillir ses fleurs face à ses concurrents jardiniers (amateurs !)',
           },
+          {
+            name: "Louis J.",
+            date: "Juin 2026",
+            text: "Jeu original qui est simple à prendre en main. Le gros plus du jeu c'est ses modificateurs de partie, on peut les manipuler de façon à ce qu'une partie ne ressemble pas à une autre ! De plus les missions de début de partie sont parfaitement équilibrés, n'importe qui peut gagner s'il trouve la bonne stratégie ! Je recommande fortement.",
+          },
         ]}
       />
       <Gallery
@@ -98,11 +106,11 @@ export default function PassionnementFolie() {
       <TextImageBloc
         isWhite
         title="Statut"
-        text="Le jeu est dans un état stable. Les tests continuent pour l'améliorer au maximum."
+        text="Le jeu est prêt à être soumis aux maisons éditions. "
       ></TextImageBloc>
       <Statistics
         stats={[
-          { value: "64", label: "variations de parties" },
+          { value: "100", label: "variations de parties" },
           { value: "20", label: "missions uniques" },
           { value: "66", label: "cartes" },
         ]}
@@ -115,6 +123,7 @@ export default function PassionnementFolie() {
           { label: "Premiers tests", date: "Juillet 2025" },
           { label: "Version stable", date: "Décembre 2025" },
           { label: "Version améliorée", date: "Avril 2026" },
+          { label: "Version terminée", date: "Juin 2026" },
         ]}
       />
       <Playtesters
@@ -127,9 +136,10 @@ export default function PassionnementFolie() {
           "Jordan",
           "Axelle",
           "Aurélien",
+          "Louis",
           "Laure",
           "Christophe",
-          "Emanuelle",
+          "Emmanuelle",
           "Jean-Luc",
           "Marine",
           "Eva",
