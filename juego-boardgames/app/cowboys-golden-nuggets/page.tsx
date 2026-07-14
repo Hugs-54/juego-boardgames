@@ -6,34 +6,35 @@ import TextImageBloc from "../components/text-image-bloc";
 import ContactForm from "../components/contact-form";
 import Footer from "../components/footer";
 
+const game = gameList.goldenNuggets;
+
 export default function CowboysGoldenNuggets() {
   return (
     <>
       <TitlePage
         hasBigTitle={true}
         title1={
-          gameList.goldennuggets.title.split(" ")[0].toUpperCase() +
+          game.title.split(" ")[0].toUpperCase() +
           " " +
-          gameList.goldennuggets.title.split(" ")[1].toUpperCase() +
+          game.title.split(" ")[1].toUpperCase() +
           " " +
-          gameList.goldennuggets.title.split(" ")[2].toUpperCase()
+          game.title.split(" ")[2].toUpperCase()
         }
         title2={
-          gameList.goldennuggets.title.split(" ")[3].toUpperCase() +
+          game.title.split(" ")[3].toUpperCase() +
           " " +
-          gameList.goldennuggets.title.split(" ")[4].toUpperCase()
+          game.title.split(" ")[4].toUpperCase()
         }
-        imgSrc={gameList.goldennuggets.image}
-        text="Bienvenu au far West lors de la conquête de l'or. Là où chaque cowboy a espoir 
-        de faire fortune en trouvant les plus grosses pépites d'or. Trouver ces fameuses golden
-         nuggets ne suffira pas, il faudra également les acheminer en toute sécurité jusqu'à votre 
-         planque en train. A vous de créer votre itinéraire idéal et de découvrir l'Ouest à chacun 
-         de vos tours. Mais n'oubliez pas, vous n'êtes jamais à l'abri d'un vol lors d'un convoi ferré.
-"
-        authors={gameList.goldennuggets.authors}
-        dates={gameList.goldennuggets.dates}
+        imgSrc={game.image}
+        text={game.description}
+        authors={game.authors}
+        dates={game.dates}
       ></TitlePage>
-      <GameInfo time="45'" age="7+" nbPlayer="2-6"></GameInfo>
+      <GameInfo
+        time={game.time}
+        age={game.age}
+        nbPlayer={game.players}
+      ></GameInfo>
       <TextImageBloc
         title="Découvrez le Far West"
         text="Révélez une nouvelle tuile et placez-la afin de vous favoriser votre conquête de l'Ouest. 

@@ -40,10 +40,13 @@ export default function Navbar() {
             ACCUEIL
           </Link>
           <div className="group px-5 hover:scale-110 transition-transform">
-            <p className="text-[#58937E] hover:text-[#73bea4] cursor-default group-hover:underline md:underline-offset-10 xl:underline-offset-20">
+            <Link
+              href="/games"
+              className="text-[#58937E] hover:text-[#73bea4] group-hover:underline md:underline-offset-10 xl:underline-offset-20"
+            >
               JEUX
-            </p>
-            <div className="absolute hidden group-hover:flex flex-col w-max z-10 md:pt-2 xl:pt-8 md:space-y-1 xl:space-y-4">
+            </Link>
+            <div className="absolute hidden group-hover:flex flex-col w-max z-10 md:pt-2 xl:pt-8 md:space-y-1 xl:space-y-4 bg-white/80 backdrop-blur-sm rounded-2xl px-4 py-3">
               {Object.values(gameList).map((game) => (
                 <Link
                   key={game.name}
@@ -122,11 +125,13 @@ export default function Navbar() {
               Accueil
             </Link>
             <div className="flex flex-col mb-1">
-              <p
-                className={`mb-2 text-white text-base sm:text-2xl cursor-default`}
+              <Link
+                href="/games"
+                className={`mb-4 text-white hover:text-[#dffaf0] text-base sm:text-2xl`}
+                onClick={toggleMenu}
               >
                 Jeux
-              </p>
+              </Link>
               {Object.values(gameList).map((game) => (
                 <Link
                   key={game.name}
@@ -184,51 +189,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-/*<nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <button
-              type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu"
-              aria-expanded={menuOpen ? "true" : "false"}
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <Bars3Icon
-                className={`${menuOpen ? "hidden" : "block"} size-10 ${
-                  classes.navItem
-                }`}
-              />
-
-              <ChevronRightIcon
-                className={`${menuOpen ? "block" : "hidden"} size-10 ${
-                  classes.navItem
-                }`}
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {menuOpen && (
-        <div className="sm:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2 grid">
-            <Link href="/" passHref>
-              MOBILE
-            </Link>
-            <Link href="/team" passHref>
-              Team
-            </Link>
-            <Link href="/projects" passHref>
-              Projects
-            </Link>
-            <Link href="/calendar" passHref>
-              Calendar
-            </Link>
-          </div>
-        </div>
-      )}
-    </nav>
-    */

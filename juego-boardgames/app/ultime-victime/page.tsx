@@ -5,25 +5,30 @@ import TextImageBloc from "../components/text-image-bloc";
 import Footer from "../components/footer";
 import ContactForm from "../components/contact-form";
 import gameList from "../games-list";
-import GameTimeline from "../components/timeline";
 import Timeline from "../components/timeline";
 import BubbleCloud from "../components/bubble-cloud";
 import Statistics from "../components/statistics";
 import Review from "../components/review";
 import Gallery from "../components/gallery";
 
+const game = gameList.ultimeVictime;
+
 export default function UltimeVictime() {
   return (
     <>
       <TitlePage
-        title1={gameList.ultimeVictime.name.split(" ")[0].toUpperCase()}
-        title2={gameList.ultimeVictime.name.split(" ")[1].toUpperCase()}
-        imgSrc={gameList.ultimeVictime.image}
-        text="Bienvenue à Bad-Horror City, dans la ville la plus dangereuse du monde, où s’affrontent les plus grands tueurs du cinéma d’horreur dans une course à l’ultime victime. En effet il ne reste plus qu’une seule et Ultime victime à Bad-Horror City ! Mais le chemin pour l’atteindre ne sera pas facile ! Chaque grand tueur devra avancer prudemment vers l’ultime Victime et devra être encore plus horrible avec ses adversaires pour y arriver !"
-        authors={gameList.ultimeVictime.authors}
-        dates={gameList.ultimeVictime.dates}
+        title1={game.title.split(" ")[0].toUpperCase()}
+        title2={game.title.split(" ")[1].toUpperCase()}
+        imgSrc={game.image}
+        text={game.description}
+        authors={game.authors}
+        dates={game.dates}
       ></TitlePage>
-      <GameInfo time="60'" age="12+" nbPlayer="4-8"></GameInfo>
+      <GameInfo
+        time={game.time}
+        age={game.age}
+        nbPlayer={game.players}
+      ></GameInfo>
       <BubbleCloud
         isWhite
         main="Ambiance"

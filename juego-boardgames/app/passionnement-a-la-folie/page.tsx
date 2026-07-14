@@ -12,29 +12,31 @@ import Gallery from "../components/gallery";
 import Review from "../components/review";
 import Playtesters from "../components/playtesters";
 
+const game = gameList.palf;
+
 export default function PassionnementFolie() {
   return (
     <>
       <TitlePage
         hasBigTitle={true}
-        title1={gameList.palf.title.split(" ")[0].toUpperCase()}
+        title1={game.title.split(" ")[0].toUpperCase()}
         title2={
-          gameList.palf.title.split(" ")[1].toUpperCase() +
+          game.title.split(" ")[1].toUpperCase() +
           " " +
-          gameList.palf.title.split(" ")[2].toUpperCase() +
+          game.title.split(" ")[2].toUpperCase() +
           " " +
-          gameList.palf.title.split(" ")[3].toUpperCase()
+          game.title.split(" ")[3].toUpperCase()
         }
-        imgSrc={gameList.palf.image}
-        text="Rose, la fleuriste du village, acceptera un rendez-vous amoureux au jardinier 
-        qui réalisera le plus beau bouquet de fleurs. Superposer partiellement des pétales 
-        pour reconstituer des fleurs et ainsi compléter vos bouquets. Mais la tâche ne sera 
-        pas évidente, tous les jardiniers devront partager le même jardin, alors attention aux mauvaises herbes.	
-"
-        authors={gameList.palf.authors}
-        dates={gameList.palf.dates}
+        imgSrc={game.image}
+        text={game.description}
+        authors={game.authors}
+        dates={game.dates}
       ></TitlePage>
-      <GameInfo time="15'" age="10+" nbPlayer="2-5"></GameInfo>
+      <GameInfo
+        time={game.time}
+        age={game.age}
+        nbPlayer={game.players}
+      ></GameInfo>
       <BubbleCloud
         isWhite
         main="Recouvrement partiel"

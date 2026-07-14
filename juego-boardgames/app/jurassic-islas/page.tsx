@@ -11,24 +11,24 @@ import BubbleCloud from "../components/bubble-cloud";
 import Statistics from "../components/statistics";
 import Review from "../components/review";
 
+const game = gameList.jurassicIslas;
+
 export default function JurassicIslas() {
   return (
     <>
       <TitlePage
-        title1={gameList.jurassicIslas.name.split(" ")[0].toUpperCase()}
-        title2={gameList.jurassicIslas.name.split(" ")[1].toUpperCase()}
-        imgSrc={gameList.jurassicIslas.image}
-        text="L’extravagant et riche PDG Julian Hugont, vous fait lègue d’un
-            archipel d’îles au large du Costa Rica. Il compte sur vous pour
-            construire, malgré toutes les difficultés, un parc de dinosaures.
-            Dépêchez-vous de construire les plus beaux bâtiments et d’introduire
-            les plus féroces des dinosaures afin d’accueillir le plus de
-            visiteurs. Attention, les autres héritiers ne vous laisseront pas
-            faire…"
-        authors={gameList.jurassicIslas.authors}
-        dates={gameList.jurassicIslas.dates}
+        title1={game.title.split(" ")[0].toUpperCase()}
+        title2={game.title.split(" ")[1].toUpperCase()}
+        imgSrc={game.image}
+        text={game.description}
+        authors={game.authors}
+        dates={game.dates}
       ></TitlePage>
-      <GameInfo time="30'" age="7+" nbPlayer="2-6"></GameInfo>
+      <GameInfo
+        time={game.time}
+        age={game.age}
+        nbPlayer={game.players}
+      ></GameInfo>
       <BubbleCloud
         isWhite
         main="Dinosaure"
